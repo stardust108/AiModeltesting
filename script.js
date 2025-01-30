@@ -30,7 +30,7 @@ function addMessage(message, className) {
 }
 
 async function getBotResponse(userMessage) {
-  const API_KEY = "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";
+  const API_KEY = ${{ secret.APIKEY }}
   const API_URL = "https://api.openai.com/v1/chat/completions";
 
   const response = await fetch(API_URL, {
